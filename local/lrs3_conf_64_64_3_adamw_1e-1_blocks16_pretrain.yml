@@ -1,0 +1,70 @@
+# Video network config
+videonet:
+    backbone_type: resnet
+    relu_type: prelu
+    width_mult: 1.0
+    pretrain: ../../pretrain_zoo/frcnn_128_512.backbone.pth.tar
+audionet:
+    # sample_rate: 16000
+    # filterbank
+    n_filters: 512
+    kernel_size: 21
+    stride: 10
+    # masknet
+    n_src: 1
+    n_blocks: 8
+    an_repeats: 3
+    fn_repeats: 13
+    mask_act: relu
+    act_type: prelu
+    norm_type: gLN
+    bn_chan: 512
+    hid_chan: 512
+    # video
+    vin_chan: 512
+    vout_chan: 512
+    vconv_kernel_size: 3
+    vn_repeats: 5
+    # fusion
+    fout_chan: 512
+    # video frcnn
+    video_config:
+        in_chan: 64
+        out_chan: 64
+        depth: 4
+        iter: 3
+        shared: False
+        norm_type: "BatchNorm1d"
+        act_type: "PReLU"
+        kernel_size: 3
+    # pretrain: ../../pretrain_zoo/frcnn_128_512.pth.tar
+# Training config
+training:
+    epochs: 200
+    batch_size: 6
+    num_workers: 8
+    half_lr: yes
+    early_stop: yes
+    divide_lr_by: null
+    online_mix: false
+# Optim config
+optim:
+    optimizer: adamw
+    lr: 0.001
+    weight_decay: 0.1
+# Sche config
+sche:
+    patience: 49
+    factor: 0.5
+# Data config
+data:
+    train_dir: local/lrs3/tr/
+    valid_dir: local/lrs3/cv/
+    nondefault_nsrc: 1
+    sample_rate: 16000
+    segment: 2.0
+    normalize_audio: false
+log:
+    path: log/tmp
+    pro_name: nichang_avproject
+    exp_name: lrs3_64_64_3_adamw_1e-1_blocks16_pretrain
