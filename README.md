@@ -4,7 +4,7 @@
 
 PyTorch Implementation of [CTCNet (Arxiv'22)](https://arxiv.org/pdf/2212.10744v1.pdf): An Audio-Visual Speech Separation Model Inspired by Cortico-Thalamo-Cortical Circuits.
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2212.10744v1) [![GitHub Stars](https://img.shields.io/github/stars/JusperLee/CTCNet?style=social)](https://github.com/JusperLee/CTCNet) ![visitors](https://visitor-badge.glitch.me/badge?page_id=JusperLee/CTCNet)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2212.10744v1) [![GitHub Stars](https://img.shields.io/github/stars/JusperLee/CTCNet?style=social)](https://github.com/JusperLee/CTCNet) ![visitors](https://visitor-badge.laobi.icu//badge?page_id=JusperLee/CTCNet)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-audio-visual-speech-separation-model/speech-separation-on-lrs2)](https://paperswithcode.com/sota/speech-separation-on-lrs2?p=an-audio-visual-speech-separation-model) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-audio-visual-speech-separation-model/speech-separation-on-lrs3)](https://paperswithcode.com/sota/speech-separation-on-lrs3?p=an-audio-visual-speech-separation-model) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-audio-visual-speech-separation-model/speech-separation-on-voxceleb2)](https://paperswithcode.com/sota/speech-separation-on-voxceleb2?p=an-audio-visual-speech-separation-model)
 
